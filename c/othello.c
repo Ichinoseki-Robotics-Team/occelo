@@ -95,14 +95,14 @@ void flip(int player, int board[8][8], int x, int y) {
             } else {
                 if (can_flip) {
                     int fx = x, fy = y;
-                    board[fy][fx] = player;
                     for (int fi = 0; fi < 8; fi++) {
+                        board[fy][fx] = player;
                         fx += FLIP_DIRS[di][0];
                         fy += FLIP_DIRS[di][1];
                         if (board[fy][fx] == player) {
                             break;
                         } else {
-                            board[fy][fx] = player;
+                            board[fy][fx] == player;
                         }
                     }
                 }
