@@ -21,6 +21,7 @@ int main() {
 
     while (true)
     {
+        printf("\x1b[1;1H\x1b[2J");
         print_board(board);
         if (!can_put_somewhere(turn, board)) {
             turn = (turn == black ? white : black);

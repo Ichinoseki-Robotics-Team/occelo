@@ -9,6 +9,7 @@ int main() {
     bool passed = false;
     while (true)
     {
+        std::cout << "\x1b[1;1H\x1b[2J";
         othello.printBoard();
         if (!othello.canPutSomewhere()) {
             if (passed) {
