@@ -31,6 +31,8 @@ int main() {
             }
             passed = true;
             continue;
+        } else {
+            passed = false;
         }
 
         while (true)
